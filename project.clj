@@ -20,7 +20,8 @@
                       "prod-build"      ^{:doc "Recompile code with prod profile."}
                                         ["with-profile" "prod" "cljsbuild" "once" "main"]}
             :profiles {:dev  {:dependencies [[figwheel-sidecar "0.5.14"]
-                                             [com.cemerick/piggieback "0.2.1"]]
+                                             [com.cemerick/piggieback "0.2.1"]
+                                             [proto-repl "0.3.1"]]
                               :source-paths ["src" "env/dev"]
                               :cljsbuild    {:builds [{:id           "main"
                                                        :source-paths ["src" "env/dev"]

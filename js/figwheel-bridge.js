@@ -48,7 +48,7 @@ function formatCompileError(msg) {
     return errorStr;
 }
 
-/* This is simply demonstrating that we can receive and react to 
+/* This is simply demonstrating that we can receive and react to
  * arbitrary messages from Figwheel this will enable creating a nicer
  * feedback system in the Figwheel top level React component.
  */
@@ -110,7 +110,7 @@ function asyncImportScripts(url, success, error) {
 	asyncImportChain
 	.then(function (v) {return fetch(url);})
         .then(function (response) {
-	    if(response.ok) 
+	    if(response.ok)
 		return response.text();
 	    throw new Error("Failed to Fetch: " + url + " - Perhaps your project was cleaned and you haven't recompiled?")
         })
